@@ -1,0 +1,1 @@
+C:\Python310\python.exe "D:\Python_Deployments\FGC_GOOGLE_ADWORDS_API\run.py" pause

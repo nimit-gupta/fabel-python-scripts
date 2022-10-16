@@ -1,0 +1,1 @@
+C:\Python310\python.exe "D:\Python_Deployments\FGC_Automation_Window_Server\FGC_UK_IE_FR_All_Orders_On_Shipping_Date_Report\UK_IE_FR_All_Orders_On_Shipping_Date.py" pause

@@ -1,0 +1,1 @@
+C:\Python310\python.exe "D:\Python_Deployments\FGC_Automation_Window_Server\FGC_Daily_Escalation_Report\FGC_Daily_Escalation_Report.py" pause

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    </head>
+    <body>
+        <div>
+            <div style = 'margin-left:2%;margin-top:2%'>
+                <img src="static/fgc-logo-1.png" alt="example" class="logo"/>
+            </div>
+        </div>
+        <div>
+            <form action="{{ url_for('save_costs')}}" method="POST"> 
+            <div class = 'row' style = 'margin-top:10%;margin-left:15%; column-gap:5px'>
+                <div class = 'column'>
+                    <input class="form-control" type = 'date' id="date" name="date" value={{date}} min="2021-01-01"  max="2022-12-31">
+                </div>
+                <div class = 'column'>
+                    <input class="form-control" type = 'number' step = 'any' id = 'pick&pack', name = 'pickandpack', placeholder = 'Pick & Pack' value = {{pickpack}}>
+                </div>
+                <div class = 'column'>
+                    <input class="form-control" type = 'number' step = 'any' id = 'stock', name = 'stock', placeholder = 'Stock' value = {{stock}}>
+                </div>
+                <div class = 'column'>
+                    <input class="form-control" type = 'number' step = 'any' id = 'holidaypaid', name = 'holidaypaid', placeholder = 'Holiday Paid' value = {{holidaypaid}}>
+                </div>
+                <div class = 'column'>
+                    <input class="form-control" type = 'number' step = 'any' id = 'management', name = 'management', placeholder = 'Management' value = {{management}}>
+                </div>
+                <div class='column'>
+                    <button onclick="myFunction()" class="btn btn-outline-primary" style = 'height:39px; width:150px;font-family:monospace'>Save</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {confirm("Are you confirm!");}
+        </script>
+    </body>
+</html>

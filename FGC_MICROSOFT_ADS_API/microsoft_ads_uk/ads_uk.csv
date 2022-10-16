@@ -1,0 +1,14 @@
+﻿"Report Name: My Campaign Performance Report"
+"Report Time: 3/2/2022"
+"Time Zone: Various"
+"Last Completed Available Day: 3/3/2022 5:50:00 AM (GMT)"
+"Last Completed Available Hour: 3/3/2022 5:50:00 AM (GMT)"
+"Report Aggregation: Daily"
+"Report Filter: "
+"Potential Incomplete Data: true"
+"Rows: 1"
+
+"TimePeriod","Impressions","Clicks","Spend","Ctr","AverageCpc","Conversions","CostPerConversion","Revenue","ConversionRate"
+"2022-03-02","8169","233","274.66","2.85%","1.18","30","9.16","1,231.15","12.88%"
+
+"©2022 Microsoft Corporation. All rights reserved. "

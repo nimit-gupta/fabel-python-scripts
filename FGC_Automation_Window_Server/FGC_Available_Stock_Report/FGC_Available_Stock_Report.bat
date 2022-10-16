@@ -1,0 +1,1 @@
+C:\Python310\python.exe "D:\Python_Deployments\FGC_Automation_Window_Server\FGC_Available_Stock_Report\FGC_Available_Stock_Report.py" pause

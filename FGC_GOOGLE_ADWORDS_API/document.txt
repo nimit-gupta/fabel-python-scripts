@@ -1,0 +1,6 @@
+# Create Google AdWords Manager Account to get Developer Token.
+# Get client_secret.json from Google Developer Console
+# Run get_your_refreshed_token.py to get refresh token
+# Create yaml file 
+# Run the script
+

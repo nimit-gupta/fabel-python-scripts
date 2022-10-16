@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+</head>
+<body> 
+    <div style = 'margin-left:2%;margin-top:2%'>
+        <img src="static/fgc-logo-1.png" alt="example" class="logo"/>
+    </div>
+    <div style = 'text-align: center; margin-top:5%'>
+        {% block content %}
+        <table class="table table-sm">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">PICK AND PACK</th>
+                    <th scope="col">STOCK</th>
+                    <th scope="col">HOLIDAY PAID</th>
+                    <th scope="col">MANAGEMENT</th>
+                </tr>
+            </thead>
+            <tbody style="overflow-y:scroll; height:100px;">
+            {% for row in data %}
+                <tr>
+                    <td>{{row['Date']}}</td>
+                    <td>{{row['PickPack']}}</td>
+                    <td>{{row['Stock']}}</td>
+                    <td>{{row['HolidayPaid']}}</td>
+                    <td>{{row['Management']}}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endblock %}
+    </div>
+      
+        <div class = 'row' style = 'margin-left:40%; column-gap:1px'>
+             <div class = 'column'>
+                <a href = "{{url_for('add_new_data')}}" class = 'btn btn-outline-primary'>Click to Add</a>
+             </div>
+             <div class = 'column'>
+                <a href = "{{url_for('edit_exits_data')}}" class = 'btn btn-outline-primary'>Click to Edit</a>
+             </div>
+        </div>
+   
+</body>

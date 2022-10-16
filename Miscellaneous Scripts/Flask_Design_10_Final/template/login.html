@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <div style = 'margin-left:2%;margin-top:2%'>
+            <img src="static/fgc-logo-1.png" alt="example" class="logo"/>
+        </div>
+    </div>
+     <div>
+         <div>
+             <div style = 'border: 1px solid; padding: 10px; box-shadow: 5px 10px #888888; margin-left:30%; margin-right:30%; margin-top:8%'>
+                <form action="{{ url_for('show')}}" method="POST"> 
+                    <div style = 'margin-top:8%;margin-left:40%;width:20%'>
+                         <div class = 'row'>
+                             <input class="form-control" type = 'text' id = 'username', name = 'username', placeholder = 'Username'>
+                         </div>
+                         <br></br>
+                         <div class = 'row'>
+                             <input class="form-control" type = 'password'  id = 'password', name = 'password', placeholder = 'Password'>
+                         </div>
+                         <br style = 'content:" "'></br>
+                         <div class = 'row'>
+                            <input type = 'checkbox' onclick="myFunction_1()" id = 'checkbox' name = 'checkbox'>
+                            <label style = 'padding-left: 0.5em; font-size: small; color:red;' for="checkbox"> Show Password</label>
+                        </div>
+                        <br></br>
+                         <div class = 'row'>
+                             <button onclick="myFunction()" class="btn btn-outline-primary" style = 'height:39px; margin-left: 25%; width:50%;font-family:monospace'>Submit</button>
+                         </div>
+                    </div>
+                 </form>
+                <script>
+                    function myFunction() {confirm("Are you confirm!");}
+                    function myFunction_1() {
+                                            var x = document.getElementById("password");
+                                            if (x.type === "password") {
+                                                                         x.type = "text";
+                                                                        } else {
+                                                                                x.type = "password";
+                                                                               }
+                                            }
+                </script>
+              </div>
+         </div>
+     </div>
+</body>
